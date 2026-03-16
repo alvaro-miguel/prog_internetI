@@ -1,0 +1,27 @@
+*{
+    background-color: rgb(170, 163, 163);
+}
+
+h1{
+    background-color: rgb(24, 13, 13);
+    color: white;
+    text-align: center;
+}
+
+.autor{
+    background-color: rgb(141, 129, 129);
+    text-align: right;
+}
+
+.separador{
+    text-align: center;
+    color: black;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+}
