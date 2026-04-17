@@ -1,36 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="q7style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questão 7</title>
+    <link rel="stylesheet" href="styleq5.css" id="tema-link">
+    <title>Mini Blog - Atividade 03</title>
 </head>
 <body>
     <h1>Mini Blog de Tecnologia</h1>
-    <h2>Primeiros passos com HTML</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vero iure ratione sunt saepe repellendus ad minima dolorum. Consequuntur aliquid architecto dignissimos atque, porro harum nobis facere eos temporibus ex.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tenetur ipsam quo enim, repudiandae nihil laborum, minus quaerat facere ut veniam eos. Cupiditate quibusdam ipsa excepturi! Error ea qui facilis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloribus beatae nesciunt optio, sit dolorem culpa ullam unde sequi vel suscipit cupiditate incidunt quisquam nulla dolore. Iusto veniam labore reiciendis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nemo voluptatum debitis officiis nesciunt, tempora unde, voluptas eos dolorem neque vel ratione beatae odit doloremque suscipit ipsa illo fugiat sequi.
-    </p>
-    <p class="autor">Autor: Ely Miranda | Data: 13/03/2026</p>
+
+    <aside>
+        <h3>Navegação e Avisos</h3>
+        <ul>
+            <li><a href="#">Início do Blog</a></li>
+            <li><a href="https://github.com/alvarorodrigues" target="_blank">Meu Portfólio</a></li>
+        </ul>
+        <p>Use o botão lateral para alternar entre os 3 temas dinâmicos.</p>
+    </aside>
+
+    <main>
+        <section>
+            <h2>Questão 5 - Tabela de Atualizações</h2>
+            <table>
+                <caption>Histórico de Versões do Blog</caption>
+                <colgroup>
+                    <col style="width: 20%;">
+                    <col span="2" style="width: 40%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Versão</th>
+                        <th>Mudança Principal</th>
+                        <th>Responsável</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>v1.0</td>
+                        <td>Criação da estrutura HTML5 básica</td>
+                        <td>Alvaro Miguel</td>
+                    </tr>
+                    <tr>
+                        <td>v2.0</td>
+                        <td>Implementação de CSS Variável e Picture</td>
+                        <td>Alvaro Miguel</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de 2 marcos atingidos em 2026.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <p class="separador">&#9733; &#9733; &#9733;</p>
+
+        <h2>Questão 6 e 7 - Banner com Picture</h2>
+        <div class="postagem_img_responsiva">
+            <picture>
+                <source media="(max-width: 600px)" srcset="atividade_03/img/imagem__atividade03_baixa_resolucao.jpg">
+                <source media="(max-width: 1024px)" srcset="atividade_03/img/imagem__atividade03_media_resolucao.jpg">
+                <img src="atividade_03/img/imagem__atividade03.jpg" alt="Banner" class="img-fluida">
+            </picture>
+            <p>Carregamento inteligente de imagens baseado na largura da tela.</p>
+        </div>
+
+        <p class="separador">&#9733; &#9733; &#9733;</p>
+
+        <h2>Questão 8 - Formulários Estruturados</h2>
+        <form class="form-amigavel">
+            <fieldset>
+                <legend>Busca no YouTube</legend>
+                <label for="busca">Termo da busca:</label>
+                <input type="text" id="busca" placeholder="O que deseja aprender?">
+                <button type="submit">Pesquisar</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Cadastro</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome">
+                
+                <label for="email">E-mail Corporativo:</label>
+                <input type="email" id="email">
+
+                <p>Gênero:</p>
+                <label><input type="radio" name="genero" value="m"> Masculino</label>
+                <label><input type="radio" name="genero" value="f"> Feminino</label>
+            </fieldset>
+        </form>
+    </main>
+
+    <p class="autor">Autor: Alvaro Miguel | Data: 13/03/2026</p>
     <p class="separador">&#9733; &#9733; &#9733;</p>
 
-    <h2>O papel do CSS</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vero iure ratione sunt saepe repellendus ad minima dolorum. Consequuntur aliquid architecto dignissimos atque, porro harum nobis facere eos temporibus ex.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tenetur ipsam quo enim, repudiandae nihil laborum, minus quaerat facere ut veniam eos. Cupiditate quibusdam ipsa excepturi! Error ea qui facilis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloribus beatae nesciunt optio, sit dolorem culpa ullam unde sequi vel suscipit cupiditate incidunt quisquam nulla dolore. Iusto veniam labore reiciendis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nemo voluptatum debitis officiis nesciunt, tempora unde, voluptas eos dolorem neque vel ratione beatae odit doloremque suscipit ipsa illo fugiat sequi.</p>
-    <p class="autor">Autor: Ely Miranda | Data: 13/03/2026</p>
-    <p class="separador">&#9733; &#9733; &#9733;</p>
-
-    <h2>Validação do código</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vero iure ratione sunt saepe repellendus ad minima dolorum. Consequuntur aliquid architecto dignissimos atque, porro harum nobis facere eos temporibus ex.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tenetur ipsam quo enim, repudiandae nihil laborum, minus quaerat facere ut veniam eos. Cupiditate quibusdam ipsa excepturi! Error ea qui facilis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloribus beatae nesciunt optio, sit dolorem culpa ullam unde sequi vel suscipit cupiditate incidunt quisquam nulla dolore. Iusto veniam labore reiciendis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nemo voluptatum debitis officiis nesciunt, tempora unde, voluptas eos dolorem neque vel ratione beatae odit doloremque suscipit ipsa illo fugiat sequi.</p>
-    <p class="autor">Autor: Ely Miranda | Data: 13/03/2026</p>
-    <p class="separador">&#9733; &#9733; &#9733;</p>
+    <script src="script.js"></script>
 </body>
 </html>

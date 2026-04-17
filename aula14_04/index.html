@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS e D.O.M.</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>JS e D.O.M.</h1>
+    <h2>Copiar e alterar o texto de um parágrafo</h2>
+    <p id = "p1">Texto do parágrafo</p>
+    <button id = "botao1">Copiar e alterar</button>
+    <div id = "resultado1"></div>
+
+    <h2>Acessar e alterar a propriedade value de inputs</h2>
+    <input id = "texto2" placeholder="Digite algo">
+
+    <hr>
+
+    <p id="texto_aleatorio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, optio expedita consequatur eveniet tenetur et possimus qui magnam labore ut cumque, laudantium, unde iusto doloremque? Quae repellat nulla reiciendis veritatis?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto eaque laboriosam adipisci. Ad quia molestias possimus vel optio ratione voluptatum rerum rem, labore ullam dolorum earum at amet autem.</p> <br> 
+    <button id="btn_mudarCor">Mudar cor do texto</button>
+    <button id="btn_tamanho">mostrar os caracteres daas tags h2</button>
+    <button id="limpar_texto">limpar texto</button>
+    <p id="qtd_c">Quantidade de tags h2 <p id="exibh2"></p></p>
+    <div id="div_paragrafos">
+        <p>paragrafo1</p>
+        <p>paragrafo2</p>
+        <p>paragrafo3</p>
+        <p>paragrafo4</p>
+        <p>paragrafo5</p>
+        <p>paragrafo6</p>
+    </div>
+    <div id="exibir_paragrafos">Quantidade de paragrafos: <p id="exib_pg"></p></div>
+    <button id="btn_exib">contar paragrafos</button>
+
+    <div id="ctd_minusculo">texto minusculo</div>
+    <button id="alterar_tam">mudar de minusculo para maiusculo</button>
+    <div id="ctd_maiusculo"></div>
+    <button id="btn_escuro">Tema escuro</button>
+    <button id="btn_reset">Resetar cores</button>
+    <p>Aumentar e diminuir fonte</p>
+    <button id="btn_aumenta">Aumentar fonte</button>
+    <button id="btn_diminui">Diminuir fonte</button>
+    <br>
+    <hr>
+    <h2>Calculadora</h2>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <div>
+        <p>Selecione a operação:</p>
+        <label><input type="radio" name="operacao" value="soma" checked> Soma</label>
+        <label><input type="radio" name="operacao" value="sub"> Subtração</label>
+        <label><input type="radio" name="operacao" value="mult"> Multiplicação</label>
+        <label><input type="radio" name="operacao" value="div"> Divisão</label>
+    </div>
+
+    <button id="btn_calcular">Calcular</button>
+    <p>Resultado: <span id="res_calc"></span></p>
+
+    <hr>
+    <h2>Lista dinâmica</h2>
+    <input type="text" id="novo_item" placeholder="Digite um item para a lista">
+    <button id="btn_adicionar">Adicionar à Lista</button>
+
+    <ul id="minha_lista">
+        </ul>
+
+        <hr>
+    <h2>opções de select</h2>
+    <input type="text" id="input_opcao" placeholder="Digite o nome da opção">
+    <button id="btn_gerar_opcao">Adicionar ao Menu</button>
+
+    <br><br>
+
+    <select id="meu_select">
+        <option value="">-- Selecione uma opção --</option>
+        </select>
+</body>
+</html>

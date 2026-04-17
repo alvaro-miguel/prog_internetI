@@ -1,23 +1,78 @@
-*{
-    background-color: gray;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    /* Questão 2: Tokens (Variáveis CSS) */
+    --color-bg: gray;
+    --color-primary: #025E73;
+    --color-secondary: #011F26;
+    --color-accent: #BFB78F;
+    --color-white: #ffffff;
+    --color-text: #333333;
+    
+    /* Questão 9: Tipografia Fluida e Espaçamentos */
+    --space-md: clamp(1rem, 2.5vw, 2rem);
+    --font-h1: clamp(2rem, 8vw, 3rem);
+    --radius-lg: 12px;
 }
 
-h1{
-    background-color: #025E73;
-    color: white;
+body {
+    background-color: var(--color-bg);
+    font-size: 1rem; /* Questão 1.a */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text);
+}
+
+h1 {
+    background-color: var(--color-primary); /* Questão 1.b */
+    color: var(--color-white);
     text-align: center;
+    font-size: var(--font-h1);
+    letter-spacing: .5rem;
+    padding: var(--space-md);
+    margin: 0;
 }
 
-.autor{
-    background-color: #BFB78F;
-    text-align: right;
+/* Questão 3: Aside Fixo e Responsivo */
+aside {
+    position: sticky;
+    top: 10px;
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 100;
 }
 
-.separador{
-    text-align: center;
-    color: white;
+/* Questão 5: Estilização de Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-white);
+    margin: var(--space-md) 0;
+}
+thead { background: var(--color-primary); color: white; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+
+/* Questão 6: Responsividade de Imagens */
+img {
+    max-width: 100%; /* Questão 6.a */
+    height: auto;
 }
 
-h2{
-    color: #011F26;
+/* Questão 8: Formulários Amigáveis */
+fieldset {
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
 }
+
+form input[type="text"], form input[type="email"] {
+    width: 100%; /* Dica Questão 8: 100% da vertical/horizontal disponível */
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
