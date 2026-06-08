@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIs Extras - Questão 3</title>
+    <link rel="stylesheet" href="apis-extras.css" />
+    <script defer src="apis-extras.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Consumo de APIs Públicas</h1>
+
+      <div class="card">
+        <h2>1. Descubra a Idade pelo Nome</h2>
+        <p class="desc">Consumindo a <em>Agify.io API</em></p>
+        <label for="inputNome">Digite um primeiro nome:</label>
+        <input type="text" id="inputNome" placeholder="Seu nome..." />
+        <button id="btnIdade">Prever Idade</button>
+        <div id="resultadoIdade" class="resultado-box"></div>
+      </div>
+
+      <div class="card">
+        <h2>2. Busca na Pokédex</h2>
+        <p class="desc">Consumindo a <em>PokéAPI</em></p>
+        <label for="inputPokemon"
+          >Digite o nome de um Pokémon (em inglês):</label
+        >
+        <input
+          type="text"
+          id="inputPokemon"
+          placeholder="Ex: pikachu, charizard..."
+        />
+        <button id="btnPokemon">Buscar Pokémon</button>
+        <div id="resultadoPokemon" class="resultado-box"></div>
+      </div>
+    </div>
+  </body>
+</html>
